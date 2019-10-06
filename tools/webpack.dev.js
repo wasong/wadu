@@ -5,6 +5,7 @@ const common = require('./webpack.common')
 const config = {
   mode: 'development',
   entry: [
+    'react-hot-loader/patch',
     'webpack-hot-middleware/client',
     './main.js',
   ],

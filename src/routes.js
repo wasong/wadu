@@ -4,8 +4,7 @@ import {
 } from 'react-router-dom'
 import { connect } from 'react-redux'
 import Loadable from 'react-loadable'
-
-import styler from 'styler'
+import { css } from 'emotion'
 
 import Callback from './Auth/Callback'
 
@@ -14,21 +13,21 @@ const Dashboard = Loadable({
   loading: () => <div>Loading Dashboard</div>,
 })
 
-const styles = styler({
-  root: {
+const classes = {
+  root: css({
     minHeight: '100vh',
     display: 'flex',
-  },
-})
+  }),
+}
 
-const Yikes = () => <div>Y i k e s</div>
+const Yikes = () => <div>Yikes</div>
 
 const Routes = ({ loggedIn, checked }) => {
   if (!checked) return null
 
   return (
     <Router>
-      <div className={styles.root}>
+      <div className={classes.root}>
         {loggedIn
           ? (
             <Switch>
