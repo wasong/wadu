@@ -5,7 +5,6 @@ Single Page Web Application using ReactJS
 ### Features
 - React, React-Router, Redux
 - Webpack
-- Emotion v10
 - Hot Module Reloading
 - Babel v7 + plugins
 - ApolloClient for GraphQL queries

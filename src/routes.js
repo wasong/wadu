@@ -4,7 +4,6 @@ import {
 } from 'react-router-dom'
 import { connect } from 'react-redux'
 import Loadable from 'react-loadable'
-import { css } from 'emotion'
 
 import Callback from './Auth/Callback'
 
@@ -13,13 +12,6 @@ const Dashboard = Loadable({
   loading: () => <div>Loading Dashboard</div>,
 })
 
-const classes = {
-  root: css({
-    minHeight: '100vh',
-    display: 'flex',
-  }),
-}
-
 const Yikes = () => <div>Yikes</div>
 
 const Routes = ({ loggedIn, checked }) => {
@@ -27,7 +19,7 @@ const Routes = ({ loggedIn, checked }) => {
 
   return (
     <Router>
-      <div className={classes.root}>
+      <div>
         {loggedIn
           ? (
             <Switch>

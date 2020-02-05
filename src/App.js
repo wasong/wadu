@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { Provider } from 'react-redux'
 import { hot } from 'react-hot-loader/root'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
+import { ThemeProvider } from '@material-ui/core/styles'
 import store from 'utils/store'
 import muiTheme from './styles/muiTheme'
 import { authenticate } from './app.module'
@@ -17,7 +17,7 @@ class App extends Component {
 
   render() {
     return (
-      <MuiThemeProvider theme={muiTheme}>
+      <ThemeProvider theme={muiTheme}>
         <Provider store={store}>
           <div>
             <CssBaseline />
@@ -38,7 +38,7 @@ class App extends Component {
             <Routes />
           </div>
         </Provider>
-      </MuiThemeProvider>
+      </ThemeProvider>
     )
   }
 }

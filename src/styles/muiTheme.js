@@ -4,7 +4,6 @@ export default createMuiTheme({
   typography: {
     useNextVariants: true,
     fontFamily: [
-      'Lato',
       'Helvetica Neue',
       'Helvetica',
       'Arial',
