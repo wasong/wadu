@@ -2,6 +2,7 @@ import gql from 'graphql-tag'
 
 import { loggedIn, reset } from 'utils/auth'
 import { client as apollo } from 'utils/apollo'
+import contentful from 'utils/contentful'
 
 // ------------------------------------
 // Constants

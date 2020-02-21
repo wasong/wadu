@@ -49,6 +49,11 @@ const config = {
         AUTH0_CLIENT_ID: JSON.stringify(process.env.AUTH0_CLIENT_ID || 'dUeE42A2aB9grdcVjVP5DD47aEHxYZ7R'),
         AUTH0_DOMAIN: JSON.stringify(process.env.AUTH0_DOMAIN || 'INSERT_DOMAIN_HERE.auth0.com'),
         AUTH0_REDIRECT_URI: JSON.stringify(process.env.AUTH0_REDIRECT_URI || 'http://localhost:8080/callback'),
+        CONTENTFUL: {
+          SPACE_ID: JSON.stringify(process.env.SPACE_ID || 'avrs01qbxqqi'),
+          DELIVERY_API: JSON.stringify(process.env.DELIVERY_API || 'SxxFpO_1gWpTJ2hQRubutaV11C97WWaQJxetwTM1PNc'),
+          PREVIEW_API: JSON.stringify(process.env.PREVIEW_API || 'EFDaaXSmp1m0D9rv7TVF_HbKnV4Ufu3IbwMqFor4TQU'),
+        },
       },
     }),
     // Emit a JSON file with assets paths
