@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom'
 import { connect } from 'react-redux'
 import Loadable from 'react-loadable'
+import { TestComponent } from '@staccc/ui'
 
 import Callback from './Auth/Callback'
 
@@ -12,7 +13,7 @@ const Dashboard = Loadable({
   loading: () => <div>Loading Dashboard</div>,
 })
 
-const Yikes = () => <div>Yikes</div>
+const Yikes = () => <div><TestComponent /></div>
 
 const Routes = ({ loggedIn, checked }) => {
   if (!checked) return null
